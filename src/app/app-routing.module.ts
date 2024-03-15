@@ -4,8 +4,10 @@ import { ListarComponent } from './components/listar/listar.component';
 import { ListarTramitesComponent } from './components/listar-tramites/listar-tramites.component';
 
 const routes: Routes = [
-  {path: '', component: ListarComponent},
-  {path: 'ListarTramites', component: ListarTramitesComponent}
+  { path: '', component: ListarComponent },
+  { path: 'ListarTramites', component: ListarTramitesComponent },
+  { path: '**', redirectTo: '/' },
+  { path: 'ListarCausas', component: ListarComponent }
 ];
 
 @NgModule({
